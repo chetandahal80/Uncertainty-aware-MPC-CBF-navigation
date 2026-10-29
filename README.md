@@ -33,13 +33,14 @@ source install/setup.bash
 Launch the robot simulation in one terminal:
 
 ```bash
-ros2 launch human_tracking launch_sim.launch.py
+ros2 launch human_tracking launch_sim.launch.py world:=worlds/detects_with_walking_humans.world
+
 ```
 
 Launch perception and control in a second terminal with the workspace sourced:
 
 ```bash
-ros2 launch mpc_cbf mpc_cbf.launch.py goal_x:=5.0 goal_y:=0.0 goal_theta_deg:=0.0
+ros2 launch mpc_cbf mpc_cbf.launch.py goal_x:=6.0 goal_y:=0.0 goal_theta_deg:=0.0
 ```
 
 The controller launch starts the RGB-D detector, world tracking and live plot.

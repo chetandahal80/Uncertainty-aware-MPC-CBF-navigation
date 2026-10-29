@@ -33,7 +33,7 @@ source install/setup.bash
 Launch the robot simulation in one terminal:
 
 ```bash
-ros2 launch human_tracking launch_sim.launch.py world:=worlds/detects_with_walking_humans.world
+ros2 launch human_tracking launch_sim.launch.py world:=worlds/world_with_human.world
 
 ```
 

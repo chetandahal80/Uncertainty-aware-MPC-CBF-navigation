@@ -52,4 +52,4 @@ configuration and source organization.
 
 ## Demo
 
-[Watch the navigation demo](live_plot.mp4)
+[Watch the navigation demo](https://youtu.be/c-UDJ3fPa94)

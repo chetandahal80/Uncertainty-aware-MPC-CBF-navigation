@@ -41,7 +41,7 @@ From the ROS workspace containing both packages:
 source /opt/ros/humble/setup.bash
 colcon build --symlink-install --packages-select human_tracking mpc_cbf
 source install/setup.bash
-ros2 launch mpc_cbf mpc_cbf.launch.py goal_x:=5.0 goal_y:=0.0 goal_theta_deg:=0.0
+ros2 launch mpc_cbf mpc_cbf.launch.py goal_x:=6.0 goal_y:=0.0 goal_theta_deg:=0.0
 ```
 
 Start the robot, camera publishers and transforms separately. Do not run the

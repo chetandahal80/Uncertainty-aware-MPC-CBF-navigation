@@ -83,7 +83,7 @@ file. During initialization, the detector also loads
 The robot uses forward-Euler unicycle dynamics with state `[x, y, theta]` and
 input `[v, omega]`. Each human uses state `[x, y, vx, vy]` and continuous
 white-acceleration process noise. `kf_process_noise_std` is the square root of
-the spectral density q, where q has units m^2/s^3. Covariance updates use Joseph
+the spectral density q, where q has units m<sup>2</sup>/s<sup>3</sup>. Covariance updates use Joseph
 form and retain position-velocity cross terms during prediction.
 
 The safety radius at each horizon sample is
@@ -94,7 +94,7 @@ cap is applied. The selected configuration uses a 1 m base radius, kappa 0.8/m,
 The QP uses deviation variables, separate task and linearization references,
 velocity bounds and optional hard acceleration bounds. Safety constraints have
 nonnegative, heavily penalized slack. Solver capacity expands for active tracks.
-The selected command limits are 1 m/s^2 linear and 3 rad/s^2 angular acceleration.
+The selected command limits are 1 m/s<sup>2</sup> linear and 3 rad/s<sup>2</sup> angular acceleration.
 Emergency, watchdog and safety-stop commands can override these rate limits.
 
 Measurement covariance is propagated using the pixel/depth projection Jacobian.

@@ -49,3 +49,7 @@ odometry and transforms, and set `use_sim_time:=false`.
 
 See [MPC-CBF documentation](src/mpc_cbf/README.md) for architecture,
 configuration and source organization.
+
+## Demo
+
+[Watch the navigation demo](live_plot.mp4)

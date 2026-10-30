@@ -28,7 +28,7 @@ perception input. Plot interpolation affects display only.
 ## Requirements
 
 The integration targets ROS 2 Humble and Python 3.10. Required ROS dependencies
-are listed in `package.xml`; Python dependencies are listed in `setup.py`.
+are listed in `package.xml`. Python dependencies are listed in `setup.py`.
 The `human_tracking` package requires Ultralytics, PyTorch and local YOLO
 weights. Live plotting requires a graphical display
 and Matplotlib with Tk support.

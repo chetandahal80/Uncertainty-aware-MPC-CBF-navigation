@@ -44,13 +44,12 @@ source install/setup.bash
 ros2 launch mpc_cbf mpc_cbf.launch.py goal_x:=6.0 goal_y:=0.0 goal_theta_deg:=0.0
 ```
 
-Start the robot, camera publishers and transforms separately. Do not run the
-standalone `human_tracking` detection node alongside the adapter. Set
+Start the robot, camera publishers and transforms separately. Set
 `use_sim_time:=false` when using wall-clock sensor timestamps. The adapter can
 be disabled with `start_tracker_adapter:=false` when a compatible publisher is
-provided; the plot can be disabled with `live_plot:=false`.
+provided. The plot can be disabled with `live_plot:=false`.
 
-Parameters are defined in `config/mpc_cbf.yaml`; use `config_file` to supply
+Parameters are defined in `config/mpc_cbf.yaml`. Use `config_file` to supply
 an alternative configuration. Set `detector_weights` to a local YOLO weights
 file. During initialization, the detector also loads
 `Yolo-weights/yolov8m.pt` relative to the process working directory.
